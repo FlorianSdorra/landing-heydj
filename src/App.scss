@@ -1,3 +1,19 @@
+// COLORS
+$matisse: #204796;
+$dodger-blue: #4670b6;
+$portage: #89a0d2;
+$bright-turquoise: #74ccd6;
+$aqua-forest: #5ca083;
+$alabaster: #fcfdfd;
+$cosmic: #79365e;
+$deep-blush: #df7b9d;
+$sunset-orange: #ef4540;
+$casablanca: #f2ab42;
+$pirate-black: #353837;
+$background-black: #222423;
+
+
+
 :root {
   --gradient: linear-gradient(
     20deg,
@@ -21,7 +37,7 @@ body {
   align-items: center;
   background: #222423;
   font-family: 'Oswald', ;
-  color: white;
+  color: $alabaster;
 }
 
 // SCSS FOR LANDING PAGE LOGO SECTION PUZZLE PIECE //
@@ -29,7 +45,6 @@ body {
 .landing{
   width: 100vw;
   height: 100vh;
-  top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +73,7 @@ body {
   border-radius: 50%;
 }
 
-h3{
+.logo-section-wrapper>h3{
   margin: 0;
   font-family: 'Oswald';
   font-weight: 200;
@@ -153,10 +168,51 @@ h3{
   }
 
 
-  // LISTWRAPPER FOR LIST-ITEM PUZZLEPIECE //@extend
+  // LISTWRAPPER FOR LIST-ITEM PUZZLE PIECE //
 
-.list-wrap{
+.result-list-wrap{
   width: 100vw;
   height: 100vh;
-  background-color: blueviolet;
+  background-color: $background-black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-list-item{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+
+  box-shadow: 2px 2px 2px black;
+  background: $pirate-black;
+  margin: 7px;
+}
+
+.result-image{
+  width: 80px;
+  height: 80px;
+  // border: 1px solid black;
+
+  background-image: url('./assets/HeyDjGhost-03.png');
+  background-size: contain;
+
+  
+}
+
+.result-info-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+}
+.result-info-container>*{
+  margin: 0;
 }
