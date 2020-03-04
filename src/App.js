@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.scss';
 
-import LogoSection from './components/LogoSection'
+import LandingPage from './components/LandingPage'
+import ListWrap from './components/ListWrap';
 
 function App() {
   return (
     <div className="App">
-        <LogoSection></LogoSection>
-    </div>
+        <LandingPage></LandingPage>
+        <ListWrap></ListWrap>
+      </div>
   );
 }
 
