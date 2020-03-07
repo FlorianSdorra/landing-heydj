@@ -25,12 +25,11 @@ $background-black: #222423;
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
 }
 
 .App{
+  margin: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,17 +37,20 @@ body {
   background: #222423;
   font-family: 'Oswald', ;
   color: $alabaster;
+
 }
 
 // SCSS FOR LANDING PAGE LOGO SECTION PUZZLE PIECE //
 
 .landing{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin: 0;
 }
 
 .logo-section-wrapper{
@@ -65,8 +67,8 @@ body {
 }
 
 .logo-circle{
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   background-image: url("./assets/HeyDjGhost-03.png");
   background-position: center;
   background-size: contain;
@@ -99,13 +101,15 @@ body {
     border-radius: 4px;
     border: 1px solid  black;
     box-shadow: 2px 1.5px #89a0d2;
+    
 
       .search-form-input {
         font-size: medium;
         color:#89a0d2;
-        padding: 10px 15px;
+        padding: 8px 12px;
         border-style: none;
         background-color: #222423e1;
+        width: 170px;
   }
 
   .search-icon{
@@ -124,17 +128,21 @@ body {
    // SCSS FOR ACTION BUTTON PUZZLE PIECE // 
 
    .action-button{
-    margin-top: 10%;
+    margin-top: 7%;
+    
    }
   
    .button-action{
-    padding: 15px 20px;
+    padding: 12px 25px;
     min-width: 55vw;
     border: 3px solid #89a0d2;
+    box-shadow: 3px 3px 3px 1px black;
     text-align: center;
     border-radius: 7px;
     background-color: #353837e3;
     font-family: 'Oswald';
+
+    box-sizing: border-box;
     
     p{
       margin: 0;
@@ -151,10 +159,8 @@ body {
    }
 
    .button-action:hover{
-    padding: 15px 20px;
     border: 3px solid #89a0d2;
     background-color: #89a0d2;
-    color: black;
    font-family: 'Oswald';
    font-size: large;
    font-weight: bold;
@@ -167,11 +173,10 @@ body {
     color: black;
   }
 
-
-  // LISTWRAPPER FOR LIST-ITEM PUZZLE PIECE //
+  // LIST-WRAPPER FOR SEARCH-RESULT-LIST-ITEM PUZZLE PIECE //
 
 .result-list-wrap{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: $background-black;
 
@@ -179,6 +184,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .result-list-item{
@@ -188,16 +194,19 @@ body {
 
   border: 1px solid black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 6px 10px;
 
   box-shadow: 2px 2px 2px black;
   background: $pirate-black;
-  margin: 7px;
+  
+  box-sizing: border-box;
+
+  margin: 5px;
 }
 
 .result-image{
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   // border: 1px solid black;
 
   background-image: url('./assets/HeyDjGhost-03.png');
