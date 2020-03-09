@@ -11,6 +11,9 @@ function App() {
                 <SearchResult></SearchResult>
                 <SearchResult></SearchResult>
                 <SearchResult></SearchResult>
+                <SearchResult></SearchResult>
+                <SearchResult></SearchResult>
+                <SearchResult></SearchResult>
           </div>
       </div>
   );

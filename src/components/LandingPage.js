@@ -18,8 +18,8 @@ class LandingPage extends React.Component{
                     </form>
                     </div> 
                 </div>
-                <div className="action-button">
-                    <button className="button-action"><p>ActionButton</p></button>
+                <div className="action-button-wrap">
+                    <button className="action-button"><p>ActionButton</p></button>
                 </div>
             </div>
         )

@@ -9,7 +9,7 @@ class SearchResult extends React.Component{
             </div>
             <div className="result-info-container">
                 <p>This is a result</p>
-                <hr></hr>
+                <hr/>
                 <p>Some info</p>
             </div>
         </div>
